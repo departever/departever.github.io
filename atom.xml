@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Hexo</title>
+    <subtitle></subtitle>
+    <icon>http://example.com/images/favicon.ico</icon>
+    <link href="http://example.com" />
+    <author>
+      <name>departever</name>
+    </author>
+    <updated>2023-05-11T07:27:50.758Z</updated>
+    <entry>
+        <id>http://example.com/2023/05/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
+        <title></title>
+        <link rel="alternate" href="http://example.com/2023/05/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+        <content type="html">&lt;h1 id=&#34;正则表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正则表达式&#34;&gt;#&lt;/a&gt; 正则表达式&lt;/h1&gt;
+&lt;h4 id=&#34;单个字符匹配规则&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#单个字符匹配规则&#34;&gt;#&lt;/a&gt; 单个字符匹配规则&lt;/h4&gt;
+&lt;p&gt;. 可以匹配任意字符&lt;/p&gt;
+&lt;p&gt;\d 可以匹配 0 - 9 的数字&lt;/p&gt;
+&lt;p&gt;\w 可以匹配字母，数字，下划线&lt;/p&gt;
+&lt;p&gt;\s 可以匹配空格字符如 &amp;quot; &amp;quot; 和 \t&lt;/p&gt;
+&lt;p&gt;\D 可以匹配非数字&lt;/p&gt;
+&lt;p&gt;\W 可以匹配 \w 匹配不到的东西&lt;/p&gt;
+&lt;p&gt;\S 可以匹配 \s 匹配不到的东西&lt;/p&gt;
+&lt;p&gt;&amp;lt;h4&amp;gt; 多个字符匹配规则 &amp;lt;/h4&amp;gt;&lt;/p&gt;
+&lt;p&gt;* 可以匹配任意个字符 包括零个字符&lt;/p&gt;
+&lt;p&gt;e.g. A\d* 可以匹配 A1 A10 A111&lt;/p&gt;
+&lt;p&gt;+ 可以匹配至少一个字符&lt;/p&gt;
+&lt;p&gt;e.g. A\d+ 可以匹配 A1 A12&lt;/p&gt;
+&lt;p&gt;? 可以匹配 0 或 1 个字符&lt;/p&gt;
+&lt;p&gt;e.g. A\d? 可以匹配 A A0&lt;/p&gt;
+&lt;p n=&#34;&#34;&gt;如果想精确指定匹配的字符数 可以用&lt;/p&gt;
+&lt;p&gt;e.g. A\d {3} 可以匹配三个数字&lt;/p&gt;
+&lt;p n,=&#34;&#34; m=&#34;&#34;&gt;想匹配 n ~ m 个字符 可以用&lt;/p&gt;
+&lt;p&gt;如果没有上限可以使用 {n,} 即可以匹配至少 n 个字符&lt;/p&gt;
+</content>
+        <updated>2023-05-11T07:27:50.758Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/05/11/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+        <title></title>
+        <link rel="alternate" href="http://example.com/2023/05/11/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+        <content type="html">&lt;h2 id=&#34;java-学习笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java-学习笔记&#34;&gt;#&lt;/a&gt; java 学习笔记&lt;/h2&gt;
+&lt;h4 id=&#34;day-1&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-1&#34;&gt;#&lt;/a&gt; day 1&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;java 的 Boolean 类型只有 true 和 false 不能用 0 和 1 替换&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;多种数据混合运算时自动转换成精度最大的计算&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(byte, short) 和 char 之间不会相互自动转换&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;byte, short, char 三者计算时自动转换成 int&lt;/p&gt;
+&lt;p&gt;同样这三者只要出现一个则他们的结果自动变为 int 类型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;java 浮点数默认为 double&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;char 类型可以保存 int 常量值，但不能保存 int 变量值，需要强制转换&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;基本数据类型转换为 String 只需要 + “ ”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;String 转基本数据类型通过包装类调用 parseXX 方法即可&lt;/p&gt;
+&lt;p&gt;即使用基本数据类型对应的包装类的相应方法得到基本数据类型&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;e&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;g&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;  String&lt;/span&gt; s1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;123&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;​          &lt;span class=&#34;token keyword&#34;&gt;int&lt;/span&gt; num1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;token class-name&#34;&gt;Integer&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;parseInt&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;s1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h4 id=&#34;day-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-2&#34;&gt;#&lt;/a&gt; day 2&lt;/h4&gt;
+&lt;p&gt;1. 取模运算本质是 a % b = a - a /b * b&lt;/p&gt;
+&lt;p&gt;e.g. 10 % -3 = 10 - 10 / (-3) * -3 = 10 - 9 = 1&lt;/p&gt;
+&lt;h4 id=&#34;day-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-3&#34;&gt;#&lt;/a&gt; day 3&lt;/h4&gt;
+&lt;p&gt;&amp;lt;strong&amp;gt; 进制转换 &amp;lt;/strong&amp;gt;&lt;/p&gt;
+&lt;p&gt;1. 十进制转换二 / 八 / 十六进制&lt;/p&gt;
+&lt;p&gt;不断除相应的进制数，将得到的余数倒过来，就是对应的进制。&lt;/p&gt;
+&lt;p&gt;2. 二进制转八进制&lt;/p&gt;
+&lt;p&gt;将二进制数每三个一组转换成相应的八进制数即可。&lt;/p&gt;
+&lt;p&gt;3. 二进制转十六进制&lt;/p&gt;
+&lt;p&gt;将二进制数每四个一组转换即可。&lt;/p&gt;
+&lt;p&gt;4. 八进制或十六进制转换成二进制 2. 和 3. 倒过来同理。&lt;/p&gt;
+&lt;p&gt;5.&amp;gt;&amp;gt; &amp;lt;&amp;lt; 算数位移&lt;/p&gt;
+&lt;p&gt;低位溢出，符号位补位溢出的高位。&lt;/p&gt;
+&lt;p&gt;左移几位相当于 * 了几个 2，右移几位相当于 / 了几个 2。&lt;/p&gt;
+&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; 逻辑位移&lt;/p&gt;
+&lt;p&gt;低位溢出，高位补零&lt;/p&gt;
+&lt;h5 id=&#34;注意没有位移符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注意没有位移符&#34;&gt;#&lt;/a&gt; 注意：没有 &amp;lt;&amp;lt;&amp;lt; 位移符&lt;/h5&gt;
+&lt;h4 id=&#34;day-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-4&#34;&gt;#&lt;/a&gt; day 4&lt;/h4&gt;
+&lt;p&gt;1.switch 表达式中的返回值必须是:byte，short，int，char，enum，String&lt;/p&gt;
+&lt;p&gt;没有 double 和 float 返回值。&lt;/p&gt;
+&lt;p&gt;2.case 语句中的值必须为常量。&lt;/p&gt;
+&lt;p&gt;3. 如果 switch 语句没有 break 会发生穿透，会继续执行后边的 case 无视判断。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovLzQuZG8=&#34;&gt;4.do&lt;/span&gt; while 是先执行后判断，注意 do while 语句在 while 的后面有个分号。&lt;/p&gt;
+&lt;h4 id=&#34;day-5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-5&#34;&gt;#&lt;/a&gt; day 5&lt;/h4&gt;
+&lt;p&gt;1. 声明数组有两种方式&lt;/p&gt;
+&lt;p&gt;(1) 数据类型 数组名 [ ] e.g. int a []&lt;/p&gt;
+&lt;p&gt;(2) 数据类型 [ ] 数组名 e.g. int [] a&lt;/p&gt;
+&lt;p&gt;2. 创建数组&lt;/p&gt;
+&lt;p&gt;数组名 = new 数据类型 [大小]&lt;/p&gt;
+&lt;p&gt;e.g. a = new int[10]&lt;/p&gt;
+&lt;p&gt;3. 数组是多个相同类型的元素的集合，注意要类型相同 。&lt;/p&gt;
+&lt;p&gt;4. 基本数据类型赋值为值拷贝 只是传递值。&lt;/p&gt;
+&lt;p&gt;5. 数组默认情况下是引用传递 传递的是地址 arr2 的变化会影响到 arr1。&lt;/p&gt;
+&lt;h4 id=&#34;day-6&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-6&#34;&gt;#&lt;/a&gt; day 6&lt;/h4&gt;
+&lt;p&gt;1. 方法定义时的参数叫形式参数，简称形参。方法调用时的参数叫实际参数，简称实参。&lt;/p&gt;
+&lt;p&gt;形参和实参类型要一直或兼容，个数，顺序必须一致。&lt;/p&gt;
+&lt;p&gt;2. 同一个类中的方法直接调用即可，跨类调用方法要通过对象名调用。&lt;/p&gt;
+&lt;p&gt;3. 基本类型数据的传递为值传递，形参改变不影响实参。&lt;/p&gt;
+&lt;p&gt;引用类型数据的传递传递的是地址（传递的也是值，但值是地址），可以通过形参影响实参。&lt;/p&gt;
+&lt;p&gt;4. 方法重载要求方法名和形参列表不同，对返回值无要求。&lt;/p&gt;
+&lt;p&gt;5. 可以通过... 来使用可变参数，可变参数可以当做数组来使用，比如 num.length。&lt;/p&gt;
+&lt;p&gt;可变参数的实参可以传入数组，本质也是数组。&lt;/p&gt;
+&lt;p&gt;可变参数可以和普通类型参数放在形参列表，但可变参数要放到最后。&lt;/p&gt;
+&lt;h4 id=&#34;day-7&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-7&#34;&gt;#&lt;/a&gt; day 7&lt;/h4&gt;
+&lt;p&gt;1. 全局变量可以不赋值有默认值，局部变量没有默认值使用必须赋值后才可使用。&lt;/p&gt;
+&lt;p&gt;2. 属性和局部变量可以重名，访问时采用就近原则。&lt;/p&gt;
+&lt;p&gt;3. 在同一个作用域中，两个局部变量不能重名。&lt;/p&gt;
+&lt;p&gt;4. 全局变量可以加修饰符，局部变量不可加修饰符。&lt;/p&gt;
+&lt;p&gt;5. 构造器修饰符可以默认，构造器没有返回值，方法名和类名一定要一样。&lt;/p&gt;
+&lt;p&gt;6. 一旦定义了自己的构造器就不会再默认创建无参构造器，除非自己显式定义。&lt;/p&gt;
+&lt;h4 id=&#34;day-8&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-8&#34;&gt;#&lt;/a&gt; day 8&lt;/h4&gt;
+&lt;p&gt;1.this 是创建对象时自带的属性，指向自身，用来简化构造器初始化属性。&lt;/p&gt;
+&lt;p&gt;2.this 可以访问成员方法，比如 this. 方法名 (参数列表)。&lt;/p&gt;
+&lt;p&gt;3.this 可以访问构造器，但只能在构造器中使用。比如 this (参数列表)。同样，用 this 访问其他构造器必须置于第一行语句。&lt;/p&gt;
+&lt;p&gt;4.this 只能在类定义的内部使用，不能在外部使用。&lt;/p&gt;
+&lt;p&gt;5.this 可以访问本类的属性。&lt;/p&gt;
+&lt;p&gt;&amp;lt;h4&amp;gt;day 9&amp;lt;/h4&amp;gt;&lt;/p&gt;
+&lt;p&gt;1.IDEA 常用快捷键&lt;/p&gt;
+&lt;p&gt;ctrl + alt + l 格式化代码&lt;/p&gt;
+&lt;p&gt;ctrl + shift + f10 运行&lt;/p&gt;
+&lt;p&gt;alt + insert 构造器快捷键&lt;/p&gt;
+&lt;p&gt;ctrl + h 查看一个类的继承关系&lt;/p&gt;
+&lt;p&gt;ctrl + b 把光标放在方法上可以直接定位到方法&lt;/p&gt;
+&lt;p&gt;.var 可以自动生成一个变量名&lt;/p&gt;
+&lt;p&gt;ctrl + d 复制当前行&lt;/p&gt;
+&lt;p&gt;ctrl + y 删除当前行&lt;/p&gt;
+&lt;p&gt;alt + / 补全代码&lt;/p&gt;
+&lt;p&gt;alt + enter 导入该行所需要的类&lt;/p&gt;
+&lt;p&gt;alt + Insert 可以生成构造函数、setter 和 getter，或者重写父类的方法&lt;/p&gt;
+&lt;p&gt;2. 包的命名规范 com. 公司名。项目名。业务模块名&lt;/p&gt;
+&lt;p&gt;3.public 对外公开&lt;/p&gt;
+&lt;p&gt;protect 只对子类和同一个包中的类公开&lt;/p&gt;
+&lt;p&gt;默认 无修饰符 对同一个包中的类公开&lt;/p&gt;
+&lt;p&gt;private 只有类本身可以访问 不对外公开&lt;/p&gt;
+&lt;h4 id=&#34;day-10&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-10&#34;&gt;#&lt;/a&gt; day 10&lt;/h4&gt;
+&lt;p&gt;1. 子类继承了所有属性和方法，但私有属性和方法不能在子类直接访问，要通过父类提供的方法间接访问。&lt;/p&gt;
+&lt;p&gt;2. 子类必须调用父类的构造器，完成父类的初始化。&lt;/p&gt;
+&lt;p&gt;3. 创建子类对象时不管子类使用哪个构造器，默认情况下都调用父类无参构造器，如果父类没有无参构造器，则使用 super 指定使用父类的哪个构造器完成父类初始化，否则编译不通过。&lt;/p&gt;
+&lt;p&gt;4. 一个对象编译类型和运行类型可以不一致。&lt;/p&gt;
+&lt;p&gt;5. 编译类型在定义对象时就确定了不能改变，运行类型是可以变化的。编译类型看定义时 = 的左边，运行类型看 = 的右边。&lt;/p&gt;
+&lt;p&gt;6.&lt;strong&gt; 向上转型&lt;/strong&gt; 父类引用名 = new 子类类型 ();&lt;/p&gt;
+&lt;p&gt;可以调用父类中的所有成员，但不能调用子类中的特有成员。在编译阶段能调用那些成员是由编译类型来确定。&lt;/p&gt;
+&lt;p&gt;最终运行效果看子类具体实现，即调用方法时从子类开始找方法然后调用。&lt;/p&gt;
+&lt;p&gt;7.&lt;strong&gt; 向下转型&lt;/strong&gt; 子类类型 引用名 = (子类类型) 父类引用；&lt;/p&gt;
+&lt;p&gt;只能强转父类的引用，不能强转父类的对象。要求父类引用必须指向当前目标类型的对象。&lt;/p&gt;
+&lt;p&gt;向下转型后可以调用子类类型中的所有成员。&lt;/p&gt;
+&lt;p&gt;8.instanceof 为比较操作符，用于判断对象的运行类型是否为 XX 类型或者 XX 类型的子类型。&lt;/p&gt;
+&lt;h4 id=&#34;day-11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-11&#34;&gt;#&lt;/a&gt; day 11&lt;/h4&gt;
+&lt;p&gt;1.java 动态绑定机制：当调用对象方法的时候，该方法会和该对象的内存地址 / 运行类型绑定；当调用对象属性时，没有动态绑定机制，哪里声明哪里使用。&lt;/p&gt;
+&lt;p&gt;2.== 判断基本数据类型为判断值是否相等，判断引用数据类型判断地址是否相等。&lt;/p&gt;
+&lt;p&gt;3.equals 默认判断引用数据类型地址是否相等，在子类中往往重写该方法用于判断内容是否相等。&lt;/p&gt;
+&lt;p&gt;4. 静态方法可以直接通过类名。方法名调用。&lt;/p&gt;
+&lt;p&gt;5.static 变量是同一个类所有对象共享，在类加载的时候就生成了。&lt;/p&gt;
+&lt;p&gt;6. 类方法中无 this 参数，普通方法中隐含 this 参数。&lt;/p&gt;
+&lt;p&gt;7. 静态方法 main 可以访问本类的静态成员和方法，不可以访问本类的非静态成员和方法。如果想访问，创建一个对象实例调用即可。&lt;/p&gt;
+&lt;p&gt;8.static 代码块作用是对类初始化，随着类的加载而执行，且只会执行一次。普通代码块每创建对象就执行一次。&lt;/p&gt;
+&lt;h4 id=&#34;day-12&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#day-12&#34;&gt;#&lt;/a&gt; day 12&lt;/h4&gt;
+&lt;p&gt;1.java 构造器隐含了执行要求第一步 super ()；第二步调用普通代码块，随后才是执行构造步骤。&lt;/p&gt;
+&lt;p&gt;2.final 类不能继承但是可以实例化对象。如果不是 final 类但含有 final 方法，该方法不能被重写但是可以被继承。&lt;/p&gt;
+&lt;p&gt;3. 内部类分为四种 定义在外部类的局部位置 1）局部内部类（有类名）2）匿名内部类&lt;/p&gt;
+&lt;p&gt;​                               定义在外部成员位置 3）成员内部类 (没有 static) 4）静态内部类 (有 static)&lt;/p&gt;
+</content>
+        <updated>2023-05-11T07:27:50.755Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2023/05/10/hello-world/</id>
+        <title>Hello World</title>
+        <link rel="alternate" href="http://example.com/2023/05/10/hello-world/"/>
+        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+</content>
+        <updated>2023-05-10T12:26:29.894Z</updated>
+    </entry>
+    <entry>
+        <id>http://example.com/2022/04/07/first/</id>
+        <title>111</title>
+        <link rel="alternate" href="http://example.com/2022/04/07/first/"/>
+        <content type="html">&lt;p&gt;222222&lt;/p&gt;
+</content>
+        <updated>2022-04-07T15:05:02.000Z</updated>
+    </entry>
+</feed>
