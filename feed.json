@@ -7,11 +7,11 @@
     "home_page_url": "http://example.com",
     "items": [
         {
-            "id": "http://example.com/2023/05/12/uml/",
-            "url": "http://example.com/2023/05/12/uml/",
+            "id": "http://example.com/2023/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/",
+            "url": "http://example.com/2023/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/",
             "title": "",
-            "date_published": "2023-05-12T13:09:30.142Z",
-            "content_html": "<h2 id=\"静态建模\"><a class=\"anchor\" href=\"#静态建模\">#</a> 静态建模</h2>\n<p>类图，对象图</p>\n<h2 id=\"动态建模\"><a class=\"anchor\" href=\"#动态建模\">#</a> 动态建模</h2>\n<p>顺序图，状态图，协作图，活动图</p>\n",
+            "date_published": "2023-06-02T10:34:50.450Z",
+            "content_html": "<h2 id=\"计算机系统基础\"><a class=\"anchor\" href=\"#计算机系统基础\">#</a> 计算机系统基础</h2>\n<h4 id=\"源码反码补码\"><a class=\"anchor\" href=\"#源码反码补码\">#</a> 源码，反码，补码</h4>\n<p>原码：将最高位为符号位（0 表示正，1 表示负），其它数字位代表数值本身的绝对值的数字表示方式。</p>\n<p>反码：如果是正数，则表示方法和原码一样；如果是负数，符号位不变，其余各位取反，则得到这个数字的反码表示形式。</p>\n<p>补码：如果是正数，则表示方法和原码一样；如果是负数，则将数字的反码加上 1（相当于将原码数值位取反然后在最低位加 1）。</p>\n<pre><code>e.g. 6 源码 0000 0110 反码 0000 0110 补码 0000 0110\n     -10 源码 1000 1010 反码 1111 0101 补码 1111 0110\n</code></pre>\n",
             "tags": []
         },
         {

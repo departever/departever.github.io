@@ -10,17 +10,21 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Fri, 12 May 2023 21:09:30 +0800</pubDate>
-        <lastBuildDate>Fri, 12 May 2023 21:09:30 +0800</lastBuildDate>
+        <pubDate>Fri, 02 Jun 2023 18:34:50 +0800</pubDate>
+        <lastBuildDate>Fri, 02 Jun 2023 18:34:50 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://example.com/2023/05/12/uml/</guid>
+            <guid isPermalink="true">http://example.com/2023/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/</guid>
             <title></title>
-            <link>http://example.com/2023/05/12/uml/</link>
-            <pubDate>Fri, 12 May 2023 21:09:30 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;静态建模&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态建模&#34;&gt;#&lt;/a&gt; 静态建模&lt;/h2&gt;
-&lt;p&gt;类图，对象图&lt;/p&gt;
-&lt;h2 id=&#34;动态建模&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态建模&#34;&gt;#&lt;/a&gt; 动态建模&lt;/h2&gt;
-&lt;p&gt;顺序图，状态图，协作图，活动图&lt;/p&gt;
+            <link>http://example.com/2023/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/</link>
+            <pubDate>Fri, 02 Jun 2023 18:34:50 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;计算机系统基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机系统基础&#34;&gt;#&lt;/a&gt; 计算机系统基础&lt;/h2&gt;
+&lt;h4 id=&#34;源码反码补码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#源码反码补码&#34;&gt;#&lt;/a&gt; 源码，反码，补码&lt;/h4&gt;
+&lt;p&gt;原码：将最高位为符号位（0 表示正，1 表示负），其它数字位代表数值本身的绝对值的数字表示方式。&lt;/p&gt;
+&lt;p&gt;反码：如果是正数，则表示方法和原码一样；如果是负数，符号位不变，其余各位取反，则得到这个数字的反码表示形式。&lt;/p&gt;
+&lt;p&gt;补码：如果是正数，则表示方法和原码一样；如果是负数，则将数字的反码加上 1（相当于将原码数值位取反然后在最低位加 1）。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;e.g. 6 源码 0000 0110 反码 0000 0110 补码 0000 0110
+     -10 源码 1000 1010 反码 1111 0101 补码 1111 0110
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
