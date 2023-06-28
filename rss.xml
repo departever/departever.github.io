@@ -39,6 +39,17 @@
 &lt;p&gt;相对路径： Path=% JAVA_HOME%\bin;% JAVA_HOME%\jre\bin;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h4 id=&#34;构建工具maven安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#构建工具maven安装&#34;&gt;#&lt;/a&gt; 构建工具 Maven 安装&lt;/h4&gt;
+&lt;h5 id=&#34;1-概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-概念&#34;&gt;#&lt;/a&gt; 1. 概念&lt;/h5&gt;
+&lt;p&gt;Maven 项目&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQUYlQjklRTglQjElQTElRTYlQTglQTElRTUlOUUlOEIvMTc3Mjk2MD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;对象模型&lt;/span&gt; (POM)，可以通过一小段描述信息来&lt;strong&gt;管理项目的构建&lt;/strong&gt;，报告和文档的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklQTElQjklRTclOUIlQUUlRTclQUUlQTElRTclOTAlODYlRTUlQjclQTUlRTUlODUlQjcvNjg1NDYzMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;项目管理工具&lt;/span&gt;软件。&lt;/p&gt;
+&lt;h5 id=&#34;2-什么是构建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-什么是构建&#34;&gt;#&lt;/a&gt; 2. 什么是构建&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;将 java 项目中的源码， 通过清理、编译、 测试、打包、安装、 部署整个过程称之为项目的构建。&lt;/li&gt;
+&lt;li&gt;清理： 清理之前编译的内容， 如字节码文件。&lt;/li&gt;
+&lt;li&gt;编译： 将 java 的源文件编译成字节码文件。&lt;/li&gt;
+&lt;li&gt;测试： 对代码中的核心功能通过测试工具，如 JUnit 进行测试。&lt;/li&gt;
+&lt;li&gt;打包： 将生成的字节吗文件打包为 jar 或者 war 包。&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>
